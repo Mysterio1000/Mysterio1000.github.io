@@ -67,19 +67,22 @@ a {
     border: 2px solid #0d0d0d;
     box-shadow: 10px 10px #0d0d0d;
 
-    background-color: hsl(200, 100%, 60%);
+    background-color: #33bbff;
 }
 
 #table_of_contents a { /* a or > a ?*/
-    color: blue;
+    color: hsl(240, 100%, 94%);
     display: block;
     border-left: 10px solid #00000000;
     
     margin: 0 10px;
+    padding-left: 10px;
 }
 
 #table_of_contents a:hover {
-    border-left: 10px solid blue;
+    border-left: 10px solid #80d4ff;
+    /* background-color: green; */
+    color: white;
 }
 
 .article {
