@@ -5,6 +5,21 @@
     src: url("fonts/GloriaHallelujah-Regular.ttf");
 } */
 
+::selection {
+    background-color: rgb(255, 250, 182);
+    color: #0d0d0d;
+    /* background-color: orangered;
+    color: white; */
+
+}
+
+::-moz-selection {
+    background-color: rgb(255, 250, 182);
+    color: #0d0d0d;
+}
+
+:root {}
+
 body, body * {
     margin: 0;
     padding: 0;
@@ -12,7 +27,6 @@ body, body * {
 
 body {
     background-color: hsl(144, 100%, 80%);
-    margin: 0 10vw;
     font-family: 'Source Sans Pro', Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -29,7 +43,7 @@ a {
     display: flex;
     /* width: 100%; */
     outline: 1px solid #0d0d0d;
-    height: 10vh;
+    height: 14vh;
 
     margin-bottom: 10vh;
 }
@@ -51,16 +65,22 @@ a {
 #main_menu > a > li {
     transform: rotate(-10deg);
     list-style-type: none;
+
+    transition: transform 0.25s;
 }
 
 #main_menu > a:hover {
     background-color: #00ff66;
 }
 
+#main_menu > a:hover > li {
+    transform: rotate(10deg);
+}
+
 #table_of_contents {
-    width: 20%;
+    width: 16%;
     float: left;
-    margin: 10vh 0;
+    margin: 10vh 0 0 10%;
 
     padding: 1% 0;
 
@@ -68,10 +88,14 @@ a {
     box-shadow: 10px 10px #0d0d0d;
 
     background-color: #33bbff;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 2vh;
 }
 
 #table_of_contents a { /* a or > a ?*/
-    color: hsl(240, 100%, 94%);
+    color: #e0e0ff;
     display: block;
     border-left: 10px solid #00000000;
     
@@ -89,9 +113,9 @@ a {
     border: 3px solid #0d0d0d;
     box-sizing: border-box;
     color: #0d0d0d;
-    width: 60%;
+    width: 48%;
     float: right;
-    margin: 10vh 0;
+    margin: 10vh 10% 10vh 0;
     /* padding: 20px 0; */
     /* background-color: #c0c0c0; */
     background-color: white;
@@ -110,3 +134,10 @@ a {
     width: 80%;
     margin: auto;
 } */
+
+#footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #3d3d8f;
+    clear: both;
+}
