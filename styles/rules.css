@@ -70,7 +70,7 @@ a {
 }
 
 #main_menu > a:hover {
-    background-color: hsl(144, 80%, 60%);
+    background-color: hsl(72, 100%, 80%);
 }
 
 #main_menu > a:hover > li {
