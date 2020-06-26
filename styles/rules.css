@@ -140,4 +140,27 @@ a {
     height: 30vh;
     background-color: #3d3d8f;
     clear: both;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#footer > h1 {
+    font-size: 1.4em;
+}
+
+#footer > li {
+    font-size: 1.4em;
+}
+
+#footer a {
+    color: #e0e0ff;
+}
+
+#footer a:hover {
+    color: white;
+    text-decoration: underline;
 }
