@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <link href="styles/rules.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="setVideo('')">
+    <ul id="main_menu">
+        <a href="index.html"><li>Homepage</li></a>
+        <a href="videos.html"><li>Videos</li></a>
+        <a href="Jesus.html"><li>Jesus</li></a>
+        <a href="mysterio.html"><li>Mystery Zone</li></a>
+        <a href="games.html"><li>Games</li></a>
+    </ul>
+    <div class="article single" id="article_introduction">
+        <div class="text"> <!--necessary?-->
+            <h1>Videos</h1>
+            <video width="480" height="270" controls>
+                <source id="video_source" src="" type="video/mp4">
+            </video>
+            <ul>
+                <a href="#" onclick="setVideo('Dream 144,000 B4 Earth; Another Dimension; & Outerspace.mp4')">Dream 144,000 B4 Earth; Another Dimension; & Outerspace</a>
+            </ul>
+        </div>
+        <script>
+            function setVideo(value) {
+                document.getElementById("video_source").src = "videos/" + value;
+            }
+        </script>
+    </div>
+    <ul id="footer">
+        <h1>Accounts:</h1>
+        <li>Instagram: <a href="https://www.instagram.com/warriorforjesus144/">warriorforjesus144</a></li>
+        <li>YouTube: <a href="https://www.youtube.com/channel/UCdHhwl4h63CguY525PAXPCw">Warrior4theKing</a></li>
+        <li>Open Processing: <a href="https://www.openprocessing.org/user/204925">John Jamieson</a></li>
+    </ul>
+</body>
+</html>
