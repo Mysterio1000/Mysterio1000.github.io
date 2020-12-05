@@ -26,8 +26,8 @@ body, body * {
 }
 
 body {
-    /* background-color: hsl(144, 100%, 80%); */
-    background: url("../images/background.png");
+    background-color: hsl(144, 100%, 80%);
+    /* background: url("../images/background.png"); */
     font-family: 'Source Sans Pro', Georgia, 'Times New Roman', Times, serif;
 }
 
