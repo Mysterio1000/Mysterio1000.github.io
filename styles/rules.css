@@ -40,6 +40,10 @@ a {
     color: inherit;
 }
 
+video {
+    width: 100%;
+}
+
 #main_menu {
     display: flex;
     /* width: 100%; */
@@ -140,7 +144,9 @@ a {
 } */
 
 .article.single {
-    margin: 10vh 25vw;
+    width: 80%;
+    margin: 10vh 10%;
+    /* margin: 10vh 25vw; */
 }
 
 #footer {
@@ -171,4 +177,23 @@ a {
 #footer a:hover {
     color: white;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    #main_menu {
+        flex-wrap: wrap;
+    }
+
+    #main_menu > a {
+        width: 14vh;/*100px;*/
+        flex-grow: 1;
+    }
+
+    #table_of_contents {
+        width: 80%;
+    }
+
+    .article {
+        width: 80%;
+    }
 }

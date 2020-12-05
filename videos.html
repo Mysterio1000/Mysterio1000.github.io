@@ -6,6 +6,8 @@
     <title>Homepage</title>
 
     <link href="styles/rules.css" rel="stylesheet" type="text/css">
+
+    <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body onload="setVideo('')">
     <ul id="main_menu">
@@ -18,18 +20,18 @@
     <div class="article single" id="article_introduction">
         <div class="text"> <!--necessary?-->
             <h1>Videos</h1>
-            <video width="480" height="270" controls>
-                <source id="video_source" src="" type="video/mp4">
+            <video id="current_video" controls>
+                <source src="" type="video/mp4">
             </video>
+        </div>
+    </div>
+    <div class="article single">
+        <div class="text"> <!--necessary?-->
+            <h1>Video List!</h1>
             <ul>
-                <a href="#" onclick="setVideo('Dream 144,000 B4 Earth; Another Dimension; & Outerspace.mp4')">Dream 144,000 B4 Earth; Another Dimension; & Outerspace</a>
+                <li>Dream 144,000 B4 Earth; Another Dimension; & Outerspace</li>
             </ul>
         </div>
-        <script>
-            function setVideo(value) {
-                document.getElementById("video_source").src = "videos/" + value;
-            }
-        </script>
     </div>
     <ul id="footer">
         <h1>Accounts:</h1>
@@ -38,4 +40,11 @@
         <li>Open Processing: <a href="https://www.openprocessing.org/user/204925">John Jamieson</a></li>
     </ul>
 </body>
+<script>
+    $("li").click(function() {
+        $("#current_video").children().attr("src", "videos/" + $(this).text() + ".mp4");
+        $("#current_video")[0].load();
+        $("#current_video")[0].play();
+    });
+</script>
 </html>
