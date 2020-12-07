@@ -28,7 +28,7 @@
     <div class="article single">
         <div class="text">
             <h1>Video List!</h1>
-            <ul>
+            <ul class="interactive_list">
                 <li>Dream 144,000 B4 Earth; Another Dimension; & Outerspace</li>
             </ul>
         </div>
@@ -41,7 +41,7 @@
     </ul>
 </body>
 <script>
-    $("li").click(function() {
+    $(".interactive_list").children().click(function() { // works on all devices? I hope!
         $("#current_video").children().attr("src", "videos/" + $(this).text() + ".mp4");
         $("#current_video")[0].load();
         $("#current_video")[0].play();
