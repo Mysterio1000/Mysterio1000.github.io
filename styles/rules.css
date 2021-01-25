@@ -49,6 +49,10 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
 video {
     width: 100%;
 }
@@ -205,6 +209,7 @@ video {
 
     #table_of_contents {
         width: 80%;
+        position: static; /*???*/
     }
 
     .article {
