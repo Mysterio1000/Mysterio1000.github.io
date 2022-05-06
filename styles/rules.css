@@ -1,0 +1,47 @@
+
+@font-face {
+	font-family: GloriaHalleluJah;
+	src: url("../assets/fonts/GloriaHallelujah-Regular.ttf");
+}
+
+body, body * {
+	margin: 0;
+	padding: 0;
+
+	font-family: GloriaHalleluJah;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+	/* cursor: pointer; */
+}
+
+#game-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: grey;
+	color: white;
+}
+
+/* Where interacting WASM games go */
+#game-container {
+	border: 2px solid black;
+	width: 700px;
+	height: 700px;
+	margin: auto;
+}
+
+/**
+ * Canvas that the actual game goes on
+ * This is kept seperate from the game container id
+ * Note:
+ * The canvas cannot have borders or padding, as those can interfere with the accuracy of the mouse coordinates
+ */
+#canvas {
+	border: none;
+	padding: 0; /* doubt this is need, but why not  */
+}
