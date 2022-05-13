@@ -17,6 +17,10 @@ a {
 	cursor: pointer;
 }
 
+#side-bar {
+	width:20vw;
+}
+
 #game-page {
 	display: flex;
 	flex-direction: column;
