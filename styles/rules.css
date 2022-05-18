@@ -1,14 +1,21 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@700&display=swap');
+
 @font-face {
 	font-family: GloriaHalleluJah;
 	src: url("../assets/fonts/GloriaHallelujah-Regular.ttf");
+}
+
+body {
+	background-color: #0090FF;
 }
 
 body, body * {
 	margin: 0;
 	padding: 0;
 
-	font-family: GloriaHalleluJah;
+	/* font-family: GloriaHalleluJah; */
+	font-family: 'Radio Canada', sans-serif;
 }
 
 a {
@@ -18,7 +25,26 @@ a {
 }
 
 #side-bar {
-	width:20vw;
+	position: fixed;
+	width: 12vw;
+	background-color: white;
+	height: 80vh;
+	top: 10vh;
+	outline: 5px solid #1F1F1F;
+	border-top: 5px solid #444;
+	border-bottom: 5px solid #444;
+	border-right: 5px solid #444;
+}
+
+.post {
+	width: 44vw;
+	/* margin-left: 20vw; */
+	margin: 10vh calc(22vw + 12vw);
+	background-color: #FFEE;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+
+	outline: 3px solid black;
 }
 
 #game-page {
