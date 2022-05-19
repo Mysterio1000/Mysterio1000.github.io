@@ -8,7 +8,6 @@
 
 body {
 	background-color: #0090FF;
-	color: white;
 }
 
 body, body * {
@@ -25,7 +24,12 @@ a {
 	cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
 	font-variant: small-caps;
 	color: #0090FF;
 	margin-top: 12px;
