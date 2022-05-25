@@ -85,6 +85,7 @@ li {
 	width: auto;
 	height: auto;
 	/* display: inline-block; */
+	/* font-weight: 300; */
 }
 
 .post:first-child {
