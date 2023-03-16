@@ -85,9 +85,9 @@ input:hover {
     /* border: 1vh solid #112; */
 	/* z-index: -5; */
     /*background-color: #0090FF;/*rgb(61, 105, 236);*/
-    	background-color: #EEF8;
+    background-color: #EEF;
 	/*backdrop-filter: blur(2px);*/
-	-webkit-backdrop-filter: blur(4px);
+	/* -webkit-backdrop-filter: blur(4px);
 
     /* text-align: center; */
 
@@ -178,9 +178,9 @@ input:hover {
 	/* margin-left: 20vw; */
 	/* margin: 10vh auto; */
 	margin: 10vh auto;
-	background-color: #FFFC;
+	background-color: #FFF;
 
-	outline: 3px solid #444;
+	/* outline: 2px solid #111;
 	/* border: 4px solid #9955FF; */
 	/*padding: 1px;*/
 
