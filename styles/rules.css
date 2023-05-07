@@ -72,27 +72,31 @@ input:hover {
 	border-left: 10px solid green;
 }*/
 
-#side-bar {
+#menu {
 	position: fixed;
-	width: 12vw;
-	min-width: 100px;
-	background-color: white;
-	/* height: 100vh; */
-	height: 100vh;
-	top: 0vh;
-    left: 0vh;
-	outline: 3px solid #334;
+	/* min-width: 100px; */
+	/* background-color: #48F; */
+	background-color: #FFF;
+	width: 84vw;
+	height: 4vw;
+	/* top: 2vh; */
+	top: 1vh;
+    left: 8vw;
+	outline: 2px solid #000;
     /* border: 1vh solid #112; */
 	/* z-index: -5; */
     /*background-color: #0090FF;/*rgb(61, 105, 236);*/
-    background-color: #EEF;
 	/*backdrop-filter: blur(2px);*/
-	/* -webkit-backdrop-filter: blur(4px);
+	/* -webkit-backdrop-filter: blur(4px); */
+	box-shadow: #000 10px 10px;
 
     /* text-align: center; */
+	font-variant: small-caps;
 
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	font-size: 1.2em;
 }
 
@@ -100,39 +104,36 @@ input:hover {
 	background-color: red;
 } */
 
-#side-bar > h1 {
-	/*text-decoration: underline;*/
-	border-bottom: 2px solid #112;
-    margin-bottom: 8px;
-	/* padding-left: 12px; */
-	/* border-left: 16px solid black; */
-	/*margin-left: 16px;*/
-	text-align: center;
-}
-
-#side-bar > a {
+#menu > a {
 	/* border-left: 16px solid #FEA;#33E; */
-    border: 2px solid #112;
+    /* border: 2px solid #000; */
+    border-right: 2px solid #0008;
+    border-left: 2px solid #0008;
+    height: 4vh;
     /* margin: 0 10px; */
-	margin: 2px 10px;
+	margin: 0 6px;
 	transition: padding 0.2s;
-    padding: 4px 0;
+    padding: 0 10px;
 	/*width: 92%;*/
-	/*background-color: #F99;*/
+	/* background-color: #F99; */
 	/*font-size: 1.2em;*/
     text-align: center;
 	white-space: nowrap;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-#side-bar > a:hover {
-	padding: 42px 0;
-    border-color: #00F;
+#menu > a:hover {
+	padding: 0 42px;
+    border-color: #000D;
     /* border-width: 3px; */
 	/*color: #33E;*/
 	/* color: #E33; */
 }
 
-#side-bar > img {
+#menu > img {
 	margin-top: auto;
 	align-self: end;
 }
@@ -140,7 +141,7 @@ input:hover {
 #contents {
 	width: 80vw;
 	min-height: 100vh;
-	float: right;
+	margin: 0 auto;
 	/* margin-left: calc(12vw + 24px + (30vw - 12vw - 24px) / 2); */
 
 	/* background-color: #FFFFFF80; */
@@ -155,11 +156,18 @@ input:hover {
 	justify-content: center;
 }
 
+#contents > * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #top-item {
-	width: 100%;
-	height: 10vh;
-	background-color: white;
-	outline: 4px solid #999;
+	width: 60vw;
+	height: 15vw;
+	margin-top: 20vh;
+	color: white;
+	background-color: #05F;
+	outline: 2px solid #000;
 	font-variant: small-caps;
 	font-size: 2em;
 
@@ -180,7 +188,7 @@ input:hover {
 	margin: 10vh auto;
 	background-color: #FFF;
 
-	/* outline: 2px solid #111;
+	outline: 2px solid #111; 
 	/* border: 4px solid #9955FF; */
 	/*padding: 1px;*/
 
@@ -199,7 +207,7 @@ input:hover {
 
 .post h1 {
 	font-size: 1.6em;
-	color: #0090FF;
+	color: #0CF;
     /* text-align: center; */
 }
 

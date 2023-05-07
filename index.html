@@ -15,10 +15,11 @@
     <script src="scripts/train.js"></script>
 </head>
 <body>
-	<aside id="side-bar">
-		<h1>Menu</h1>
+	<aside id="menu">
+		<!-- <h1>menu</h1> -->
 		<a href="#post-australia-shape">Australia</a>
-		<a href="#post-big-bang-prosecution">Crimes</a>
+		<a href="#post-who-am-i">Who am I</a>
+		<a href="#post-australia-shape">Australia</a>
 		<a href="#post-who-am-i">Who am I</a>
 		<!-- <img src="assets/images/menu-ornate.png"> -->
 	</aside>
@@ -26,23 +27,6 @@
     	<section id="top-item">
             The Miscellaneous Thoughts of John
     	</section>
-        <section class="post" id="post-australia-shape">
-            <!-- <h1>Test</h1> -->
-            <h2>
-                Australia is a strange shape.
-            </h2>
-        </section>
-<!--         <section class="post" id="post-nnn">
-            <h2>
-                NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN NNNNNNNNNNNN
-            </h2>
-        </section> -->
-        <section class="post" id="post-big-bang-prosecution">
-            <!-- <h1>Test</h1> -->
-            <h2>
-                Everyone respobsible for keeping the big bang theory on air needs to be prosecuted. Lol
-            </h2>
-        </section>
         <section class="post" id="post-who-am-i">
             <h1>About this Website and its Owner</h1>
             <p>
@@ -51,18 +35,37 @@
                 "And this is eternal life, that they know you, the only true God, and Jesus Christ whom you have sent." -- Jesus, John 17:3 (ESV)
             </p>
         </section>
+        <section class="post" id="post-australia-shape">
+            <h1>Test post</h1>
+            <p>
+            	TTEEEEEEEEEEEEEEEEESSSSSSSSTTTTTTTTTT!!!!!!!
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
+                llll
+            </p>
+        </section>
     </div>
 </body>
 </html>
 <script>
-	let posts = document.getElementsByClassName("post");
+/*	let posts = document.getElementsByClassName("post");
 	for (let i = 0; i < posts.length; i++) {
 		let stringStyle = "";
 
 		for (let i = 0; i < 4; i++) {
 			let xOffset = (Math.random() * 100 - 50);
 			let yOffset = (Math.random() * 100 - 50);
-			let color = "hsla(" + (Math.random() * 180 + 90) + ", 100%, 50%, 0.7)"
+			let color = "hsla(" + (Math.random() * 180 + 90) + ", 100%, 50%, 0.5)"
 			stringStyle += xOffset + "px " + yOffset + "px " + color;
 			if (i != 3)
 				stringStyle += ", "
@@ -70,4 +73,18 @@
 
 		posts.item(i).style.boxShadow = stringStyle;
 	}
+*/
+	let stringStyle = "";
+
+	for (let i = 0; i < 4; i++) {
+		let xOffset = (Math.random() * 100 - 50);
+		let yOffset = (Math.random() * 100 - 50);
+//		let color = "hsla(" + (Math.random() * 180 + 90) + ", 100%, 50%, 0.5)"
+		let color = "hsla(" + (Math.random() * 120 + 180) + ", 100%, 80%, 1.0)"
+		stringStyle += xOffset + "px " + yOffset + "px " + color;
+		if (i != 3)
+			stringStyle += ", "
+	}
+
+//	document.getElementById("top-item").style.boxShadow = stringStyle;
 </script>
