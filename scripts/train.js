@@ -44,7 +44,7 @@ function draw() {
 	// ellipse(mouseX, mouseY, 40, 40);
 
 	// if (trainX < width) image(train_img, trainX, height - 210);//, 306, 114);
-	for (let i = 0; i < 1; i++) {
+	for (let i = 0; i < 3; i++) {
 		image(train_img, trainX - (153 * i), image_offset + 1080 - 300);//height - 205);//, 306, 114);
 	}
 
